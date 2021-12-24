@@ -1,0 +1,62 @@
+[debug] [2021-12-04T02:33:03.254Z] ----------------------------------------------------------------------
+[debug] [2021-12-04T02:33:03.256Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\SAHIL KUMAR GUPTA\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-12-04T02:33:03.257Z] CLI Version:   9.23.0
+[debug] [2021-12-04T02:33:03.257Z] Platform:      win32
+[debug] [2021-12-04T02:33:03.257Z] Node Version:  v16.6.2
+[debug] [2021-12-04T02:33:03.258Z] Time:          Sat Dec 04 2021 08:03:03 GMT+0530 (India Standard Time)
+[debug] [2021-12-04T02:33:03.258Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-12-04T02:33:03.312Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-12-04T02:33:03.312Z] > authorizing via signed-in user (2609sahil@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\SAHIL KUMAR GUPTA\Desktop\amazon-clone\amazon-clone
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using challenge-83a2a. 
+[debug] [2021-12-04T02:33:18.341Z] > refreshing access token with scopes: []
+[debug] [2021-12-04T02:33:18.342Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-12-04T02:33:19.813Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sat, 04 Dec 2021 02:33:19 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-04T02:33:19.826Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/challenge-83a2a [none]
+[debug] [2021-12-04T02:33:21.143Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/challenge-83a2a 200
+[debug] [2021-12-04T02:33:21.144Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/challenge-83a2a {"projectId":"challenge-83a2a","projectNumber":"52454925491","displayName":"amazon-challenge","name":"projects/challenge-83a2a","resources":{"hostingSite":"challenge-83a2a"},"state":"ACTIVE"}
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with sample code
+[info] pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2021-12-04T02:33:21.146Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-12-04T02:33:21.147Z] > authorizing via signed-in user (2609sahil@gmail.com)
+[debug] [2021-12-04T02:33:21.147Z] [iam] checking project challenge-83a2a for permissions ["firebase.projects.get"]
+[debug] [2021-12-04T02:33:21.147Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-12-04T02:33:21.147Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-12-04T02:33:21.541Z] <<< HTTP RESPONSE 200 {"date":"Sat, 04 Dec 2021 02:33:21 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-04T02:33:21.551Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-83a2a:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-12-04T02:33:23.615Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 04 Dec 2021 02:33:23 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1402","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-04T02:33:23.616Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/challenge-83a2a/services/cloudfunctions.googleapis.com:enable  
+ 
+[debug] [2021-12-04T02:33:23.617Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/challenge-83a2a/services/runtimeconfig.googleapis.com:enable  
+ 
+[debug] [2021-12-04T02:33:26.260Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 04 Dec 2021 02:33:25 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-04T02:33:26.261Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 04 Dec 2021 02:33:25 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
